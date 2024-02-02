@@ -1,8 +1,45 @@
 
-  <mat-form-field class="example-full-width">
-    <mat-label>Favorite food</mat-label>
-    <input matInput placeholder="Ex. Pizza" [(ngModel)] ="food">
-  </mat-form-field>
 
+<div class="padding-20px">
+ 
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>ID PACE</mat-label>
+      <input matInput placeholder="Placeholder" [(ngModel)] ="food">
+    </mat-form-field>
+  </p>
+  <p>{{ food }}</p>
 
-<p>{{ food }}</p>
+  <h4>ID PACE</h4>
+<mat-form-field>
+  <mat-label>ID</mat-label>
+  <select matNativeControl required>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+</mat-form-field>
+
+<h4>COLOR</h4>
+<mat-form-field>
+  <mat-label>COLOR</mat-label>
+  <select matNativeControl required>
+    <option value="Azul">Azul</option>
+    <option value="Azul">Amarelo</option>
+    <option value="Azul">Cor de Laranja</option>
+    <option value="Azul">Verde</option>
+    <option value="Azul">Violeta</option>
+  </select>
+</mat-form-field>
+
+<h4>Distância da Volta</h4>
+<mat-form-field>
+  <mat-label>Distância da Volta</mat-label>
+  <select matNativeControl required>
+    <option value="200">200</option>
+    <option value="400">400</option>
+  </select>
+</mat-form-field>
+</div>
